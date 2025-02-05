@@ -8,5 +8,7 @@
         asyncpg: High-performance PostgreSQL driver for async operations.
         alembic: Database migrations.
 
+-> To load environment variables from a .env file: - pip install python-dotenv
+
 
 """
