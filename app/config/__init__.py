@@ -1,1 +1,2 @@
-from setting import Setting as envVariables
+from config.setting import settings as envVariables
+from config.dependencies import Dependencies
