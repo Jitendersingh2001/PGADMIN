@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-from routes import mainRouter  # Single import for all routes
+from routes import mainRouter
 
 app = FastAPI()
-
 app.include_router(mainRouter)
