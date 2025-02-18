@@ -15,6 +15,6 @@
 
 -> To load environment variables from a .env file: - pip install python-dotenv
 
-alembic revision --autogenerate -m "Add User model"
-alembic upgrade head
+-> To make migrations : - alembic revision --autogenerate -m "Add User model"
+-> To run the migrations: - alembic upgrade head
 """
