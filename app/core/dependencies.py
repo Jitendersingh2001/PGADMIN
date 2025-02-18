@@ -1,9 +1,8 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from fastapi import Depends
 from config.database import AsyncSessionLocal
 from typing import AsyncGenerator
 
-async def get_db() -> AsyncGenerator[AsyncSession, None]:
+async def getDB() -> AsyncGenerator[AsyncSession, None]:
     """
     Dependency to provide a database session for route handlers.
     

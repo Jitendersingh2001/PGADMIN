@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from routes import mainRouter
-from core.dependencies import get_db
+from core.dependencies import getDB
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi import Depends
-from sqlalchemy import text  # Import the text function
+from sqlalchemy import text
 
 app = FastAPI()
 
@@ -12,7 +12,7 @@ app.include_router(mainRouter)
 
 # Testing route to verify database connectivity
 @app.get("/test-db-connection")
-async def test_db_connection(db: AsyncSession = Depends(get_db)):
+async def test_db_connection(db: AsyncSession = Depends(getDB)):
     """
     Test endpoint to verify database connectivity.
     Executes a simple query to check if the database is reachable.
